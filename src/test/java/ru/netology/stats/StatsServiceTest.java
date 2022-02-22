@@ -74,6 +74,7 @@ class StatsServiceTest {
 
 
     }
+
     @Test
 
     public void FindAboveMed() {
