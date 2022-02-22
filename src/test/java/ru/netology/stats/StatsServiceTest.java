@@ -20,6 +20,7 @@ class StatsServiceTest {
 
     }
 
+
     @Test
 
     public void ShouldCalculateAverageSum() {
@@ -31,7 +32,6 @@ class StatsServiceTest {
         long actual = service.CalculateAverage(sales);
 
         assertEquals(expected, actual);
-
 
     }
 
@@ -46,7 +46,9 @@ class StatsServiceTest {
         int actual = service.minSales(sales);
 
         assertEquals(expected, actual);
+
     }
+
 
     @Test
     public void MaximumSales() {
@@ -58,7 +60,9 @@ class StatsServiceTest {
         int actual = service.maxSales(sales);
 
         assertEquals(expected, actual);
+
     }
+
 
     @Test
 
@@ -72,8 +76,8 @@ class StatsServiceTest {
 
         assertEquals(expected, actual);
 
-
     }
+
 
     @Test
 
@@ -86,7 +90,6 @@ class StatsServiceTest {
         long actual = service.AboveMedium(sales);
 
         assertEquals(expected, actual);
-
 
     }
 }

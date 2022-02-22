@@ -15,9 +15,7 @@ public class StatsService {
     public long CalculateAverage(long[] sales) {
         return CalculateSum(sales) / sales.length;
 
-
     }
-
 
     public int minSales(int[] sales) {
         int minMonth = 0;
@@ -29,6 +27,7 @@ public class StatsService {
             month = month + 1;
         }
         return minMonth + 1;
+
     }
 
     public int maxSales(int[] sales) {
@@ -42,6 +41,7 @@ public class StatsService {
             month = month + 1;
         }
         return maxMonth + 1;
+
     }
 
     public long BelowMedium(long[] sales) {
@@ -61,7 +61,6 @@ public class StatsService {
                 months = months + 1;
             }
         return months;
-
 
     }
 }
