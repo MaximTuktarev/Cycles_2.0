@@ -2,7 +2,7 @@ package ru.netology.stats;
 
 public class StatsService {
 
-    public long CalculateSum(long[] sales) {
+    public long calculateSum(long[] sales) {
         long sum = 0;
         for (long sale : sales) {
             sum = sum + sale;
@@ -12,8 +12,8 @@ public class StatsService {
 
     }
 
-    public long CalculateAverage(long[] sales) {
-        return CalculateSum(sales) / sales.length;
+    public long calculateAverage(long[] sales) {
+        return calculateSum(sales) / sales.length;
 
 
     }
@@ -44,20 +44,20 @@ public class StatsService {
         return maxMonth + 1;
     }
 
-    public long BelowMedium(long[] sales) {
+    public long belowMedium(long[] sales) {
         int months = 0;
         for (long sale : sales)
-            if (sale <= CalculateAverage(sales)) {
+            if (sale <= calculateAverage(sales)) {
                 months = months + 1;
             }
         return months;
 
     }
 
-    public long AboveMedium(long[] sales) {
+    public long aboveMedium(long[] sales) {
         int months = 0;
         for (long sale : sales)
-            if (sale >= CalculateAverage(sales)) {
+            if (sale >= calculateAverage(sales)) {
                 months = months + 1;
             }
         return months;
