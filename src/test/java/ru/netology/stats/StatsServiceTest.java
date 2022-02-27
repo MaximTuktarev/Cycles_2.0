@@ -8,36 +8,36 @@ class StatsServiceTest {
 
     @Test
 
-    public void ShouldCalculateAllSum() {
+    public void shouldCalculateAllSum() {
 
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
 
-        long actual = service.CalculateSum(sales);
+        long actual = service.calculateSum(sales);
 
         assertEquals(expected, actual);
 
     }
 
-
     @Test
 
-    public void ShouldCalculateAverageSum() {
+    public void shouldCalculateAverageSum() {
 
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
 
-        long actual = service.CalculateAverage(sales);
+        long actual = service.calculateAverage(sales);
 
         assertEquals(expected, actual);
+
 
     }
 
 
     @Test
-    public void MinimumSales() {
+    public void minimumSales() {
 
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -46,12 +46,10 @@ class StatsServiceTest {
         int actual = service.minSales(sales);
 
         assertEquals(expected, actual);
-
     }
 
-
     @Test
-    public void MaximumSales() {
+    public void maximumSales() {
 
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -60,36 +58,35 @@ class StatsServiceTest {
         int actual = service.maxSales(sales);
 
         assertEquals(expected, actual);
-
     }
-
 
     @Test
 
-    public void FindBelowMed() {
+    public void findBelowMed() {
 
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 7;
 
-        long actual = service.BelowMedium(sales);
+        long actual = service.belowMedium(sales);
 
         assertEquals(expected, actual);
 
-    }
 
+    }
 
     @Test
 
-    public void FindAboveMed() {
+    public void findAboveMed() {
 
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 7;
 
-        long actual = service.AboveMedium(sales);
+        long actual = service.aboveMedium(sales);
 
         assertEquals(expected, actual);
+
 
     }
 }
